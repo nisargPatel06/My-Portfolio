@@ -1,58 +1,64 @@
 import React from "react";
+import SpotlightCard from "../ui/SpotlightCard/SpotlightCard";
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
       color: "from-blue-400 to-cyan-400",
-      skills: ["JavaScript", "React.js", "Tailwind CSS"],
+      skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
+      spotlightColor: "rgba(96, 165, 250, 0.2)",
     },
     {
       title: "Backend",
       color: "from-purple-400 to-pink-400",
       skills: ["Node.js", "Express", ".NET Core"],
+      spotlightColor: "rgba(196, 181, 253, 0.2)",
     },
     {
       title: "Tools",
       color: "from-green-400 to-emerald-400",
       skills: ["Redux Toolkit", "Cloudinary", "Stripe"],
+      spotlightColor: "rgba(134, 239, 172, 0.2)",
     },
     {
       title: "Database",
       color: "from-orange-400 to-red-400",
       skills: ["MongoDB", "SQL Server", "SQL Server", "SQL Server"],
+      spotlightColor: "rgba(253, 186, 116, 0.2)",
     },
   ];
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-900/30">
-      <div className="container mx-auto">
+    <section id="skills" className="py-32 px-6 bg-gray-900/30">
+      <div className="font-Nunito container mx-auto">
         <h2 className="text-4xl font-bold text-white text-center mb-16">
           Technical Skills
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category, index) => (
-            <div
+            <SpotlightCard
               key={index}
-              className="p-6 bg-gray-900/50 border border-gray-700 backdrop-blur-sm rounded-xl"
+              className="h-auto bg-gray-900/50 border border-gray-700 backdrop-blur-sm rounded-xl"
+              spotlightColor={category.spotlightColor}
             >
               <h3
-                className={`text-xl font-bold mb-4 bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}
+                className={`text-xl font-bold mb-6 bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}
               >
                 {category.title}
               </h3>
 
-              <div className="flex">
+              <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="text-center py-2 px-2 border border-gray-600 text-gray-300 rounded-full"
+                    className="text-center py-2 px-4 border border-gray-700 text-gray-300 rounded-full"
                   >
                     {skill}
                   </div>
                 ))}
               </div>
-            </div>
+            </SpotlightCard>
           ))}
         </div>
       </div>

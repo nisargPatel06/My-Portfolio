@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6">
+    <section id="about" className="py-20 px-8">
       <div className="font-Nunito container mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold text-white text-center mb-16">
           About Me
@@ -12,7 +12,7 @@ const About = () => {
         <div className="grid gap-8">
           <div className="bg-gray-900/50 border border-gray-700 backdrop-blur-sm rounded-lg">
             <div className="p-8">
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-300 text-lg leading-relaxed text-justify">
                 I am an aspiring software developer with strong front-end and
                 back-end skills.I am passionate about creating innovative web
                 solutions and always eager to learn new technologies. I have

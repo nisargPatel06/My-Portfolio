@@ -34,7 +34,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen px-8 bg-gradient-to-br from-[#080808] via-gray-90 to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-[#080808] via-gray-90 to-gray-900">
       <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
       <LandingPage />
       <About />

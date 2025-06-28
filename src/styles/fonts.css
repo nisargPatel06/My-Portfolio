@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Expose";
+  src: url("/fonts/Expose-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

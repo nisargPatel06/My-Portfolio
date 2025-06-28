@@ -5,7 +5,8 @@ export default {
     extend: {
       fontFamily: {
         Nunito: ["Nunito"],
-        Expose: ["Expose"],
+        Outfit: ["Outfit"],
+        Outfit_L: ["Outfit_L"],
       },
     },
   },

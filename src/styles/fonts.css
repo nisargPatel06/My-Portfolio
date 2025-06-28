@@ -6,8 +6,13 @@
 }
 
 @font-face {
-  font-family: "Expose";
-  src: url("/fonts/Expose-Medium.woff") format("woff");
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit_L";
+  src: url("/fonts/Outfit-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

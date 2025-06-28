@@ -6,32 +6,39 @@ const Skills = () => {
     {
       title: "Frontend",
       color: "from-blue-400 to-cyan-400",
-      skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
+      skills: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React.js",
+        "Tailwind CSS",
+        "Next.js",
+      ],
       spotlightColor: "rgba(96, 165, 250, 0.2)",
     },
     {
       title: "Backend",
       color: "from-purple-400 to-pink-400",
-      skills: ["Node.js", "Express", ".NET Core"],
+      skills: ["Node.js", "Express.js", ".NET Core"],
       spotlightColor: "rgba(196, 181, 253, 0.2)",
     },
     {
       title: "Tools",
       color: "from-green-400 to-emerald-400",
-      skills: ["Redux Toolkit", "Cloudinary", "Stripe"],
+      skills: ["Redux", "Postman", "Git", "Cloudinary", "Stripe"],
       spotlightColor: "rgba(134, 239, 172, 0.2)",
     },
     {
       title: "Database",
       color: "from-orange-400 to-red-400",
-      skills: ["MongoDB", "SQL Server", "SQL Server", "SQL Server"],
+      skills: ["MongoDB", "SQL Server", "Oracle", "PostgreSQL"],
       spotlightColor: "rgba(253, 186, 116, 0.2)",
     },
   ];
   return (
     <section id="skills" className="py-32 px-6 bg-gray-900/30">
       <div className="font-Nunito container mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-16">
+        <h2 className="text-4xl font-Outfit_L font-medium text-white text-center mb-16">
           Technical Skills
         </h2>
 
@@ -43,7 +50,7 @@ const Skills = () => {
               spotlightColor={category.spotlightColor}
             >
               <h3
-                className={`text-xl font-bold mb-6 bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}
+                className={`text-2xl font-Outfit mb-6 bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}
               >
                 {category.title}
               </h3>
@@ -52,7 +59,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="text-center py-2 px-4 border border-gray-700 text-gray-300 rounded-full"
+                    className="text-center font-Outfit_L py-2 px-4 border border-gray-700 text-gray-300 rounded-full"
                   >
                     {skill}
                   </div>

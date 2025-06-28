@@ -20,7 +20,7 @@ const Navbar = ({ activeSection, scrollToSection }) => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className={`font-Nunito transition-colors hover:text-blue-400 cursor-pointer ${
+                className={`transition-colors hover:text-blue-400 cursor-pointer ${
                   activeSection === item.toLowerCase()
                     ? "text-blue-400"
                     : "text-gray-300"

@@ -11,7 +11,7 @@ const LandingPage = () => {
       <div className="text-center max-w-4xl mx-auto">
         <div className="mb-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            <span className="text-transparent font-Expose tracking-wide bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 animate-gradient-x">
+            <span className="text-transparent font-Outfit font-medium tracking-wid bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 animate-gradient-x">
               Nisarg Patel
             </span>
           </h1>

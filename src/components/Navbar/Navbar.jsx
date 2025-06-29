@@ -9,26 +9,21 @@ const Navbar = ({ activeSection, scrollToSection }) => {
             Nisarg Patel
           </div>
           <div className="hidden md:flex space-x-9">
-            {[
-              "Home",
-              "About",
-              "Skills",
-              "Experience",
-              "Projects",
-              "Certifications",
-            ].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
-                className={`transition-colors hover:text-blue-400 cursor-pointer ${
-                  activeSection === item.toLowerCase()
-                    ? "text-blue-400"
-                    : "text-gray-300"
-                }`}
-              >
-                {item}
-              </button>
-            ))}
+            {["Home", "About", "Skills", "Experience", "Projects"].map(
+              (item) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className={`text-lg transition-colors hover:text-blue-400 cursor-pointer ${
+                    activeSection === item.toLowerCase()
+                      ? "text-blue-400"
+                      : "text-gray-300"
+                  }`}
+                >
+                  {item}
+                </button>
+              )
+            )}
           </div>
         </div>
       </div>

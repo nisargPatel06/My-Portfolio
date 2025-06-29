@@ -1,4 +1,4 @@
-import { GraduationCap, MapPin } from "lucide-react";
+import { LuGraduationCap, LuMapPin } from "react-icons/lu";
 import React from "react";
 
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
           <div className="bg-gray-900/50 border border-gray-700 backdrop-blur-sm rounded-lg">
             <div className="p-8">
               <div className="flex items-center gap-3 mb-6">
-                <GraduationCap className="text-blue-400" size={28} />
+                <LuGraduationCap className="text-blue-400" size={28} />
                 <h3 className="text-2xl font-bold text-white">Education</h3>
               </div>
 
@@ -43,7 +43,7 @@ const About = () => {
                     Veer Narmad South Gujarat University (VNSGU)
                   </p>
                   <div className="flex items-center gap-2 text-gray-400">
-                    <MapPin size={16} />
+                    <LuMapPin size={17} />
                     <span>Gujarat, India</span>
                   </div>
                 </div>

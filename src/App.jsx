@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { LandingPage, Navbar, About, Skills, Footer } from "./components";
+import {
+  LandingPage,
+  Navbar,
+  About,
+  Skills,
+  Footer,
+  Experience,
+} from "./components";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -39,6 +46,7 @@ const App = () => {
       <LandingPage />
       <About />
       <Skills />
+      <Experience />
     </div>
   );
 };

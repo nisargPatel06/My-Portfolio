@@ -43,14 +43,16 @@ const LandingPage = () => {
               nisargpatel6504@gmail.com
             </a>
             <a
-              href="#"
+              target="_blank"
+              href="https://github.com/nisargPatel06?tab=repositories"
               className="flex items-center gap-1 text-gray-300 hover:text-blue-400 transition-colors"
             >
               <LuGithub size={20} />
               Github
             </a>
             <a
-              href="#"
+              target="_blank"
+              href="https://www.linkedin.com/in/nisargpatel06/"
               className="flex gap-1 text-gray-300 hover:text-blue-400 transition-colors"
             >
               <FaLinkedinIn size={20} />

@@ -6,6 +6,7 @@ import {
   Skills,
   Footer,
   Experience,
+  Projects,
 } from "./components";
 
 const App = () => {
@@ -47,6 +48,8 @@ const App = () => {
       <About />
       <Skills />
       <Experience />
+      <Projects />
+      <Footer />
     </div>
   );
 };
